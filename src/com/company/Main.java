@@ -74,30 +74,7 @@ public class Main {
     }
 }
 
-class Numbers<E extends Comparable<E>>{
-    private List<E> numberList = new ArrayList<>();
-    public void add(E number){
-        numberList.add(number);
-    }
-    public void sortNumbers(){
-        for (int i =0; i<numberList.size(); i++) {
-            for (int j=0; j<numberList.size()-i-1; j++){
-                if (numberList.get(j).compareTo(numberList.get(j+1))>0){
-                    E temp = numberList.get(j);
-                    numberList.set(j, numberList.get(j+1));
-                    numberList.set(j+1, temp);
-                }
-            }
-        }
-    }
 
-    public void displayList(){
-        for (int i =0; i<numberList.size();i++){
-            System.out.println(numberList.get(i));
-        }
-    }
-
-}
 
 class ShapeList<E> {
     private List<E> shapeList = new ArrayList<>();
