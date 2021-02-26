@@ -23,6 +23,7 @@ public class Main {
         int result = operate(5,10,15, lamdaExpression);
         System.out.println(result);
 
+        System.out.println("Learning git feature");
 
         /*
         Numbers<Double> numbers = new Numbers();
